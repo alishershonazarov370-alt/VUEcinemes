@@ -27,16 +27,16 @@ body {
 }
 
 :root {
-   --body: #040D1F;
-   --nav-hover: #ED8E00;
-   --text: #fff;
-   --header-text: #C8C8C8;
-   --btn: #F18128;
-   --btn-hover: #040D1F;
-   --title: #F18128;
-   --font_M: 'Montserrat';
-   --font_C: 'Comfortaa';
-   --font_R: 'Roboto';
+    --body: #040D1F;
+    --nav-hover: #ED8E00;
+    --text: #fff;
+    --header-text: #C8C8C8;
+    --btn: #F18128;
+    --btn-hover: #040D1F;
+    --title: #F18128;
+    --font_M: 'Montserrat';
+    --font_C: 'Comfortaa';
+    --font_R: 'Roboto';
 }
 
 /* ads start */
@@ -135,7 +135,7 @@ header {
     margin-bottom: 30px;
 }
 
-.header__text {
+.header__txt {
     color: var(--header-text);
     line-height: 24px;
     max-width: 570px;
@@ -175,7 +175,7 @@ header {
     text-transform: capitalize;
     margin-top: 60px;
     margin-bottom: 66px;
-    border-bottom: 2px solid  var(--title);
+    border-bottom: 2px solid var(--title);
     width: max-content;
 }
 
@@ -193,6 +193,8 @@ header {
     height: 100%;
     object-fit: cover;
     transition: 500ms;
+    background: linear-gradient(90deg, #DEF7FF 0%, #F4FCFF 45.64%, rgba(255, 255, 255, 0) 100.72%);
+
 }
 
 .films__content {
@@ -208,7 +210,7 @@ header {
 .films__content i {
     color: var(--text);
     margin-bottom: 12px;
-    transition: 500ms;      
+    transition: 500ms;
 }
 
 .films__time {
@@ -219,13 +221,13 @@ header {
     border-radius: 9px;
     background: #070F1933;
     margin-bottom: 30px;
-    transition:500ms;
+    transition: 500ms;
 }
 
 .films__content-title {
     font-size: 22px;
     font-weight: 400;
-    color: var(--text);
+    background: rgba(255, 255, 255, 1);
     margin-bottom: 12px;
 }
 
@@ -235,10 +237,10 @@ header {
     font-family: var(--font_R);
     line-height: 21px;
     padding-left: 14px;
-}   
+}
 
 .films__cards {
-    display: flex;  
+    display: flex;
     justify-content: space-between;
 }
 
@@ -295,27 +297,27 @@ header {
 
 /* collections section start */
 
-.collections__card{
-  position: relative;
-  max-width: 350px;
-  width: 100%;
-  min-height: 193px;
-  display: flex;
-  border-radius: 6px;
-  overflow:hidden ;
-  transition: 500ms;
+.collections__card {
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    min-height: 193px;
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: 500ms;
 }
 
-.collections__banner{
+.collections__banner {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.collections__content{
+.collections__content {
     position: relative;
-    background: linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba( 49,114, 9,0.56)100%);
+    background: linear-gradient(270deg, rgba(7, 15, 25, 0.56) 0%, rgba(49, 114, 9, 0.56)100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -323,13 +325,15 @@ header {
     flex-grow: 1;
     color: var(--text);
 }
-.collections__content-title{
+
+.collections__content-title {
     font-size: 20px;
     font-family: var(--font_C);
     font-weight: 400;
     margin-top: 15px;
 }
-.collections__card::before{
+
+.collections__card::before {
     content: url(../image/collections/line.png);
     position: absolute;
     z-index: 1;
@@ -339,7 +343,7 @@ header {
 }
 
 
-.collections__card::after{
+.collections__card::after {
     content: url(../image/collections/line.png);
     position: absolute;
     z-index: 1;
@@ -348,15 +352,16 @@ header {
     transform: translateY(-50%);
 }
 
-.collections__cards{
+.collections__cards {
     display: flex;
     justify-content: space-between;
 }
 
 
-.collections__card:hover .collections__banner{
+.collections__card:hover .collections__banner {
     transform: scale(1.2);
 }
+
 .collections__card:hover i {
     transform: scale(1.2) translateY(20px);
     color: aqua;
@@ -365,9 +370,9 @@ header {
 .collections__content i {
     transition: 500ms;
 }
-  
 
-.ections__content-title .collections__card:hover  {
+
+.ections__content-title .collections__card:hover {
     transform: scale(0);
 }
 
@@ -390,26 +395,26 @@ header {
     gap: 30px;
 }
 
-.series__item:first-of-type{
+.series__item:first-of-type {
     grid-column: 4 span;
     grid-row: 2 span;
 }
 
-.series__item:nth-of-type(2){
+.series__item:nth-of-type(2) {
     grid-column: 2 span;
     grid-row: 2 span;
 }
 
-.series__item{
-   position: relative;
-   min-height: 184px;
-   border-radius: 6px;
-   overflow: hidden;
-   display: flex;
+.series__item {
+    position: relative;
+    min-height: 184px;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
 }
-  
 
-.series__banner{
+
+.series__banner {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -417,7 +422,7 @@ header {
     transition: 500ms;
 }
 
-.series__content{
+.series__content {
     position: relative;
     background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%);
     flex-grow: 1;
@@ -427,19 +432,19 @@ header {
     justify-content: center;
 }
 
-.series__content-title{
-  font-size: 40px;
-  font-family: var(--font_C);
-  font-weight: 400;
-  color: var(--text);
-  margin-bottom: 27px;
+.series__content-title {
+    font-size: 40px;
+    font-family: var(--font_C);
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 27px;
 }
 
-.series__content-text{
+.series__content-text {
     color: var(--text);
     font-family: var(--font_C);
     line-height: 24px;
-    padding-inline:22px ;
+    padding-inline: 22px;
     margin-bottom: 30px;
 }
 
@@ -447,7 +452,35 @@ header {
     transform: scale(1.2);
 }
 
-.series__content{
+.series__content {
     color: var(--text);
 }
- 
+
+/* footer start */
+
+footer {
+    background: linear-gradient(135deg, #f07d00, #d96a00);
+    padding: 18px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.rasmlar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rasmlar img.Play,
+.rasmlar img.App {
+    height: 40px;
+    cursor: pointer;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    font-family: var(--font_C);
+}
